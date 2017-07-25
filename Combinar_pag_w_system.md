@@ -15,7 +15,7 @@
 7. Asignar el Rol previamente creado a todos los usuarios que se requiera que los meta al sistema interno, en caso de que los usuarios no tengan este rol, nunca verán el sistema interno una vez que inicien sesión.
 8. Identificar cuál es el tema padre del sistema interno (Normalmente se utiliza Bootstrap como tema principal.), se puede saber dentro de la carpeta de temas del drupal del sistema interno, o en la pestaña de apariencia en el drupal admin. 
 9. Una vez se sepa cual es el tema padre del sistema interno, ver si será necesario meterlo al drupal de la página web (puede ser que no sea necesario, porque ya se tenia bootstrap instalado anteriormente, o puede ser que si sea necesario porque no se habia utilizado en la página web). En caso de ser necesario, solamente copiar la carpeta de del tema padre dentro de la carpeta de temas de la página web.
-10. Ir a la carpeta del drupal del sistema interno, agarrar la carpeta del theme (que normalmente tiene el mismo nombre que el módulo o la página web: `/public_html/dev/sites/all/themes/~folder~`), y pegarla en la carpeta de los temas del drupal de la página web (`/public_html/dev/sites/all/themes/`)
+10. Ir a la carpeta del drupal del sistema interno, agarrar la carpeta del theme (que normalmente tiene el mismo nombre que el módulo o la página web: `/sites/all/themes/~folder~`), y pegarla en la carpeta de los temas del drupal de la página web (`/sites/all/themes/`)
 11. Activar el tema del sistema interno dentro de `admin/appearance`.
 > En caso de que el sistema interno este desarrollado en bootstrap 4, seguir el paso 10, de lo contrario, brincarse hasta el paso 13
 12. Como el módulo del sistema interno esta desarrollado en Bootstrap 4, será necesario hacer varios ajustes para que funcione, ya que el theme bootstrap del drupal está en la versión 3. Para ello, realizar los [siguientes pasos](Configure_bootstrap_4_drupal.md), una vez terminados, regresar aquí y continuar.
@@ -35,7 +35,7 @@
     4. Marcar Login, registration, one-time login link
     5. Seleccionar All pages except those listed
     6. En el apartado de Redirect users with roles, ahi seleccionar el rol que previamente se creó para identificar a los usuarios internos del sistema.
-16. Una vez configurados los temas correctamente, solamente faltaria cargar el módulo y sus tablas. Ir a la carpeta en donde está el módulo del sistema interno `/public_html/dev/sites/all/modules/~module_name~` y copiarlo y pegarlo en la misma dirección pero del drupal de la página Web.
+16. Una vez configurados los temas correctamente, solamente faltaria cargar el módulo y sus tablas. Ir a la carpeta en donde está el módulo del sistema interno `/sites/all/modules/~module_name~` y copiarlo y pegarlo en la misma dirección pero del drupal de la página Web.
 17. Ir a `admin/modules` y activar el módulo del sistema interno.
 18. Hasta este punto, el módulo deberia de funcionar, pero como no tiene información, dará error. Entonces, hay que agregar todas las tablas del sistema interno, las tablas normalmente tienen como prefijo el nombre del modulo, entonces no deberia de ser dificil identificarlas. Una vez sepas cuales tablas son, solamente hay que crearlas en la base de datos de la página web, y meterle los datos del sistema interno.
 19. Muy probablemente ahora sigan apareciendo cosas raras, es por los bloques de drupal. Hay que irse a `structure/block/list` y filtrarlos por los bloques del tema de interno, y quitar todos los que pertenecen a la página web.
