@@ -58,7 +58,7 @@
           <input class="custom-control-input" type="checkbox"
                  value="1" data-validation="checkbox_group" id="customCheckInline1" name="client_areas[]"
                  data-validation-qty="min1" data-validation-error-msg="Selecciona al menos una área.">
-          <label class="custom-control-label" for="customCheckInline1">Proveedor</label>
+          <label class="custom-control-label" for="customCheckInline1">CCTV</label>
       </div>
   </div>
 
