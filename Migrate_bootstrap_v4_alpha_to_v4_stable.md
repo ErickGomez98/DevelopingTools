@@ -14,7 +14,7 @@
 - Sin cambios necesarios
 
 ## Badge
-- Sin cambios necesarios
+- Cambiar `.badge-default` por `.badge-secondary`
 
 ## Buttons
 - Sin cambios necesarios
@@ -63,6 +63,9 @@
   </div>
 
   ```
+## List Group
+- Sin cambios necesarios
+  
 
 
 
