@@ -7,7 +7,7 @@
 #### Para buscar una clase o elemento para poder remplazarlo, usar la función de `grep -Ril "text-to-find" . --exclude-dir={docs*,vendor*}` en git bash
 
 ## Page
-- Modificar `page.tpl.php` por este nuevo template(PONER AQUI URL DEL NUEVO TPL)
+- Modificar `page.tpl.php` por este nuevo [template](https://github.com/ErickGomez98/DevelopingTools/blob/master/v4-page.tpl.php)
 - Modificar las clases de hidden de los elementos de los menus de drupal, para no mostrar el link de salir en dispositivos grandes, remplazar las clases de hidden por las siguientes: `.d-block .d-sm-block .d-md-none`
 
 ## Alerts
